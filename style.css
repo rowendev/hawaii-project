@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 3px 3px 5px 1px rgb(138, 138, 138);
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  margin: 0.5rem 0.75rem;
+  width: 4vw;
+  height: 4vw;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #09777D;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main section.backImg {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("./Pictures/pat-whelen-V9pvEdPJyAw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section.backImg h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+main section.backImg button.start {
+  background-color: #6FE5EC;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+main section.backImg button.start:hover {
+  background-color: #92e7eb;
+}
+main section.backImg div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main section.second h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+main section.second section.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+main section.second section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 2rem;
+  height: 80vh;
+  flex: 1 1 300px;
+}
+main section.second section.cards div.card div.imageContainer {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+main section.second section.cards div.card div.imageContainer img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+main section.second section.cards div.card div.imageContainer img:hover {
+  transform: scale(1.2);
+}
+main section.second section.cards div.card h4 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+main section.second section.cards div.card p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.35rem;
+}
+main section.second section.cards div.card a {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #09777D;
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer {
+  background-color: #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 18vw;
+  margin-top: 1.5rem;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+footer div.logo img {
+  margin: 0.5rem 0.75rem;
+  width: 4vw;
+  height: 4vw;
+}
+footer ul {
+  flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+footer ul li {
+  margin: 0rem 1rem;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+footer ul li a:hover {
+  color: rgb(171, 167, 167);
+}
+footer div.footer-icon {
+  margin-top: 1rem;
+}
+footer div.footer-icon img {
+  margin: 0rem 1rem;
+  width: 4vw;
+  height: 4vw;
+  cursor: pointer;
+}
+footer h5 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 850px) {
+  main section.second section.cards div.card {
+    height: 70vh;
+  }
+  main section.second section.cards div.card div.imageContainer {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.second section.cards div.card div.imageContainer img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+@media (max-width: 550px) {
+  header div.logo {
+    margin-left: 1rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  main section.backImg h3 {
+    font-size: 1.5rem;
+  }
+  main section.second section.cards div.card div.imageContainer img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  footer {
+    height: 50vw;
+  }
+}/*# sourceMappingURL=style.css.map */
